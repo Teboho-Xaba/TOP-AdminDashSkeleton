@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template: 1fr 2fr 2fr;
+    grid-template-areas: "a b"
+                         "a c";
+    min-height: 100vh;
+    width: 100%;
+}
+
+.dash {
+    grid-area: a;
+    background: blue;
+    width: 30vw;
+}
+
+.dash div {
+    border: 1px solid peru;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    grid-area: b;
+    background: yellow;
+    width: 70vw;
+    height: 15vh;
+}
+
+main {
+    grid-area: c;
+    background: red;
+    width: auto;
+    height: 85vh;
+}
